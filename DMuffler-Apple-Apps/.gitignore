@@ -1,0 +1,5 @@
+.zip
+*.xcuserstate
+DerivedData/
+.DS_Store
+*.xcworkspace/xcuserdata/
