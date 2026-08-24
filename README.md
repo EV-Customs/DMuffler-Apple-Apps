@@ -34,4 +34,4 @@ Built entirely in Swift, DMuffler runs natively on all four major Apple platform
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/EV-Customs/DMuffler-iOS-iPadOS-WatchOS-App.git](https://github.com/EV-Customs/DMuffler-iOS-iPadOS-WatchOS-App.git)
+   git clone [https://github.com/EV-Customs/DMuffler-Apple-Apps.git](https://github.com/EV-Customs/DMuffler-Apple-Apps.git)
