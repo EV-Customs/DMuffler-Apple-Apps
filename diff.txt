@@ -1,0 +1,49 @@
+diff --git a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+index e772d3b..59842a2 100644
+--- a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
++++ b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+@@ -1,19 +1,32 @@
+-//
+ //  DMuffler_Apple_AppsTests.swift
+-//  DMuffler-Apple-AppsTests
+-//
+-//  Created by Pluto on 8/23/26.
+-//  Copyright © 2026 EV Customs. All rights reserved.
++// DMuffler-Apple-AppsTests
++//  For use with the DMuffler product line of EV Customs LLC
+ //
++//  Created by Blaze Sanders on 2026-08-02
++//  For support email dev@evcustoms.store
+ 
+-import Testing
++import XCTest
++@testable import DMuffler_Apple_Apps // Use your app target name
+ 
+-struct DMuffler_Apple_AppsTests {
++final class CarTests: XCTestCase {
+ 
+-    @Test func example() async throws {
+-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+-        // Swift Testing Documentation
+-        // https://developer.apple.com/documentation/testing
+-    }
++    func testVehicleValidation() {
++        // VIN Assertions
++        XCTAssertTrue(isValidVIN(input:  "HGBH42JXMN123456"))
++        XCTAssertFalse(isValidVIN(input: "OHGBH42JXMN123456"))
++        XCTAssertFalse(isValidVIN(input: "IHGBH42JXMN123456"))
++        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456"))
++        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456  "))
++        XCTAssertFalse(isValidVIN(input: " QHGBH42JXMN123456"))
++        XCTAssertFalse(isValidVIN(input: "H42JXMN123456"))
+ 
++        // CarMake Assertions
++        XCTAssertTrue(isValidVehicleMake(input: 3))
++        XCTAssertFalse(isValidVehicleMake(input: 15))
++
++        // Enum Inspection
++        if let lastRankedCarMake = VehicleMake.allCases.last {
++            print("Worst ranked car make: \(lastRankedCarMake)")
++        }
++    }
+ }
