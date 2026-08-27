@@ -23,8 +23,14 @@ struct ContentView: View {
     var body: some View {
         //TODO UserDefaults
         
-        let TestObject = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
-        Text(TestObject.description)
+        let TestStruct = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
+        Text(TestStruct.description)
+            .font(.system(.body, design: .monospaced))
+            .padding()
+        
+        let UserStruct = UserAsset(firstName: "Blaze", phoneNumber: 7196390839, vehicles: ["5YJ3E1EB2JF100019"])
+        
+        Text(UserStruct.description)
             .font(.system(.body, design: .monospaced))
             .padding()
     }

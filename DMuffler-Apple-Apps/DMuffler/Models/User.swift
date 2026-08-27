@@ -7,8 +7,8 @@
 // Standard libraries
 import SwiftData                // Instead of "import Foundation", "SQLite" or "GRDB" (feature-rich SQLite toolkit in Swift)
 import Foundation
-import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struct
-
+import DeveloperToolsSupport    // Used to define images in "UserAsset" struct
+import SwiftUI                  // Used to define SF Symbols in "UserAsset" struct
 
 // External libraries
 
@@ -19,15 +19,27 @@ import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struc
  - Parameters:
    - id: The unique identifier for the user profile instance (Satisfies Identifiable protocol)
    - firstName: The user's given name.
-   - phoneNumber: The numeric contact phone number formatted as an unsigned 32-bit integer. 15551112222
+   - phoneNumber: The numeric contact cell phone number formatted as an unsigned 32-bit integer. 15551112222
    - vehicles: A list of VINs associated with a user's account.
  */
-struct User: Identifiable{
+struct UserAsset: Identifiable{
     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
 
     var firstName: String
-    var phoneNumber: UInt32
+    var phoneNumber: UInt
     var vehicles: [String]
+    // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
+    
+    var description: String {
+        """
+        🚗 Debug User Info:
+          • Name:  \(firstName)
+          • Cell Phone:  \(phoneNumber)
+          • Electric & Hybrid Vehicles: \(vehicles)
+
+        """
+    }
+
 }
 
 
