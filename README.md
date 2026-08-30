@@ -61,8 +61,7 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
 ---
 
 ## 🚀 Installation & Setup
-
-### Apple Application (Frontend)
+### Apple iOS / WatchOS / iPadOS / MacOS App (Frontend)
 
 #### Requirements
 * **iOS / iPadOS / watchOS / macOS:** Version 27.0+
@@ -74,7 +73,7 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
    ```bash
    git clone https://github.com/EV-Customs/DMuffler-Apple-Apps.git
    ```
-2. Open the workspace in Xcode:
+2. TODO!!! Open the workspace in Xcode:
    ```bash
    open Files.xcworkspace
    ```
@@ -83,30 +82,26 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
 
 ---
 
-### Compute Module (Backend)
-
-The backend code is run on the Raspberry Pi CM4 and handles vehicle communication, audio synthesis, and Bluetooth/WiFi connectivity with the Apple App.
+### DMuffler Dongle (Backend)
+The backend code is run on the Raspberry Pi CM4 and handles vehicle communication, audio synthesis, and Bluetooth/WiFi connectivity with the Apple iOS / WatchOS / iPadOS / MacOS front-end app.
 
 #### Installation
 1. Flash your Pi CM4 with Raspberry Pi OS.
-2. Clone the companion repository:
+2. Clone the  DMuffler-PiComputeModule repository:
    ```bash
    git clone https://github.com/EV-Customs/DMuffler-PiComputeModule.git
    ```
 3. Install Python dependencies:
    ```bash
-   pip install -r requirements.txt
+  cd DMuffler-PiComputeModule
+  pip install -r requirements.txt
    ```
-4. Run the main server loop:
+4. Run the main loop:
    ```bash
    python Main.py
    ```
 
----
-
-## 💻 Backend Usage & Integration Code Examples
-
-The backend Python codebase implements key functionalities that help control real-time connection and sound generation. Here is how you can use them:
+This backend Python codebase implements key functionalities that help control real-time connection and sound generation. Here is how you can test them without the frontend running:
 
 ### 1. Reliable Connection with Retries
 The backend establishes a robust OBD2/Dongle connection using the `connect_with_retry` function:
@@ -125,7 +120,7 @@ else:
 ```
 
 ### 2. Live Pitch-Shifting (Simulating Engine RPM)
-To make sounds feel reactive to your EV's throttle, the engine audio generator shifts the pitch of an audio file dynamically based on RPM telemetry:
+To make sounds feel reactive to your EV's throttle, the engine audio generator shifts the pitch of an audio file dynamically based on RPM telemetry from vehicle CAN Bus.
 
 ```python
 import numpy as np
@@ -152,12 +147,12 @@ sd.wait()
 ## ⚖️ Why Digital Mufflers Exist?
 
 1. **Safety Regulations (NHTSA):** Electric vehicles are incredibly quiet at low speeds, posing risks to pedestrians. Many transport authorities have mandated minimum sound requirements for hybrid and electric vehicles (see [NHTSA Minimum Sound Requirements](https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/812347-minimumsoundrequirements.pdf)).
-2. **Acoustic Experience:** Car enthusiasts miss the raw mechanical feedback of traditional combustion engines. DMuffler brings back that thrill without compromising on EV efficiency. Even Elon Musk has expressed a deep fondness for gas-engine cars (owning vintage classics alongside his Teslas).
+2. **Acoustic Experience:** Car enthusiasts miss the raw mechanical feedback of traditional combustion engines. DMuffler brings back that thrill without compromising on EV efficiency.
 
 ---
 
 ## 📬 Support & Community
 
 * **Developer & Support Email:** dev@evcustoms.store
-* **Creator Tweet:** @X\_BlazeSanders
+* **Author X Account:** @X\_BlazeSanders
 * **Issues:** Submit questions or bug reports via our GitHub Issues page.
