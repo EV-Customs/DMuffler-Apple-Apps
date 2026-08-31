@@ -5,24 +5,31 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
 **DMuffler** (Digital Muffler / pun of launchd) is a cross-platform Apple application designed to bring dynamic, customizable engine and exhaust audio profiles to the modern electric vehicle (EV) enthusiast. 
+Built entirely in Swift, DMuffler runs natively on all four major Apple platforms, allowing you to control and customize your EV's acoustic footprint right from your wrist, tablet, phone, or personal computer (just not on PC or Android yet).
 
-Built entirely in Swift, DMuffler runs natively on all four major Apple platforms, allowing you to control and customize your EV's acoustic footprint right from your wrist, tablet, phone, or personal computer (just not on PC).
+> Here’s to the sound creators. The tone tweakers. The noise makers.*
+*The ones who hear things differently. **Sound Different!**
 
 ---
 
 ## 🏎 How It Works
 
-The **DMuffler** ecosystem bridges a native Apple Frontend app with a custom Raspberry Pi-based Backend module:
+The **DMuffler** ecosystem bridges a native Apple frontend app with a custom Raspberry Pi-based backend module:
 
-1. **Frontend App (SwiftUI):** Runs on your iOS, iPadOS, watchOS, or macOS device. It acts as the command center for selecting sound profiles, viewing telemetry, and customizing vehicle audio settings.
-2. **Compute Module (Python Backend):** A Raspberry Pi CM4 housed in your vehicle that intercepts real-time CAN bus / OBD2 telemetry (speed, throttle position, RPM) and generates dynamically pitch-shifted exhaust audio matching your selected vehicle profile.
-3. **Muffler Hardware:** A custom physical 3D-printed enclosure with magnets attached to your EV that projects the synthesized acoustics externally.
+1. **Frontend App (Swift UI):** Runs on your iOS, iPadOS, watchOS, or macOS device. It acts as the command center for selecting sound profiles, viewing telemetry, and customizing vehicle audio settings.
+2. **Compute Module (Python Backend):** A Raspberry Pi CM4 housed in your vehicle intercepts real-time CAN bus / OBD-2 telemetry (speed, throttle position, RPM)  to generate dynamically pitch-shifted exhaust audio, which is Bluetooth streamed in high quality to your vehicle internal speakers using the (aptX)[https://en.wikipedia.org/wiki/AptX] audio data compression codecs.
+3. **Muffler Hardware:** A custom physical 3D-printed enclosure with magnets attaches to your vehicle and projects  synthesized acoustics externally, if desired. You can turn this off at any time to keep the neighbors happy. 
 
 ---
 
 ## 🛠 Hardware Requirements
 
-To experience the full integration of the Digital Muffler system, the following hardware is required:
+To experience the full integration of the DMuffler ecosystem, the following development and deployment hardware is required.
+### Development:
+To hack (correctly defined as "A transparent, community-shared modification or repurposing of hardware or software to solve a problem in a way the original creator did not intend.") the DMuffler ecosystem you will need:
+
+### Deployment:
+To use the DMuffler ecosystem inside your vehicle you will need:
 
 | Component | Description | Source / Part Number |
 | :--- | :--- | :--- |
@@ -44,9 +51,9 @@ The system is designed with exploration of several industry-standard and custom 
 
 ---
 
-## 🔊 Available Vehicle Audio Profiles
+## 🔊 Demo Vehicle Audio Profiles
 
-DMuffler is pre-configured to simulate exhaust signatures for a wide variety of legendary performance cars, electric vehicles, and sci-fi crafts. You can download and extract audio tracks using the `youtube-dl --extract-audio --audio-format mp3` command from the following sources:
+DMuffler is pre-configured to simulate seven exhaust signatures for a wide variety of legendary performance cars, electric vehicles, and sci-fi crafts. You can download and extract audio tracks using the `youtube-dl --extract-audio --audio-format mp3` command from the following sources:
 
 * **McLaren F1** (https://www.youtube.com/watch?v=mOI8GWoMF4M)
 * **Ferrari LaFerrari** (https://www.youtube.com/watch?v=B4Th3LxCgb4)
@@ -58,10 +65,18 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
 * **Star Wars Podracer** (https://www.youtube.com/watch?v=f7ogSqLwNQ0)
 * **Tesla Motor Whine** (Direct drivetrain whine) (https://www.youtube.com/watch?v=j4AxsGk-LdQ)
 
+## Custom Vehicle Audio Profiles
+To add additonal custom exhaust signatures you will need to purchase and download them from the EV Customs Sound Store, wherea community of artists from around Earth have created refined sounds for your enjoyment.
+Three easy steps:
+1. Visit www.evcustoms.store on your iPhone, iPad, or Mac to purchase and download to your Apple device. 
+2. 
+
+
 ---
 
 ## 🚀 Installation & Setup
-### Apple iOS / WatchOS / iPadOS / MacOS App (Frontend)
+
+### Apple Application (Frontend)
 
 #### Requirements
 * **iOS / iPadOS / watchOS / macOS:** Version 27.0+
@@ -73,7 +88,7 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
    ```bash
    git clone https://github.com/EV-Customs/DMuffler-Apple-Apps.git
    ```
-2. TODO!!! Open the workspace in Xcode:
+2. Open the workspace in Xcode:
    ```bash
    open Files.xcworkspace
    ```
@@ -82,26 +97,30 @@ DMuffler is pre-configured to simulate exhaust signatures for a wide variety of 
 
 ---
 
-### DMuffler Dongle (Backend)
-The backend code is run on the Raspberry Pi CM4 and handles vehicle communication, audio synthesis, and Bluetooth/WiFi connectivity with the Apple iOS / WatchOS / iPadOS / MacOS front-end app.
+### Compute Module (Backend)
+
+The backend code is run on the Raspberry Pi CM4 and handles vehicle communication, audio synthesis, and Bluetooth/WiFi connectivity with the Apple App.
 
 #### Installation
 1. Flash your Pi CM4 with Raspberry Pi OS.
-2. Clone the  DMuffler-PiComputeModule repository:
+2. Clone the companion repository:
    ```bash
    git clone https://github.com/EV-Customs/DMuffler-PiComputeModule.git
    ```
 3. Install Python dependencies:
    ```bash
-  cd DMuffler-PiComputeModule
-  pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
-4. Run the main loop:
+4. Run the main server loop:
    ```bash
    python Main.py
    ```
 
-This backend Python codebase implements key functionalities that help control real-time connection and sound generation. Here is how you can test them without the frontend running:
+---
+
+## 💻 Backend Usage & Integration Code Examples
+
+The backend Python codebase implements key functionalities that help control real-time connection and sound generation. Here is how you can use them:
 
 ### 1. Reliable Connection with Retries
 The backend establishes a robust OBD2/Dongle connection using the `connect_with_retry` function:
@@ -120,7 +139,7 @@ else:
 ```
 
 ### 2. Live Pitch-Shifting (Simulating Engine RPM)
-To make sounds feel reactive to your EV's throttle, the engine audio generator shifts the pitch of an audio file dynamically based on RPM telemetry from vehicle CAN Bus.
+To make sounds feel reactive to your EV's throttle, the engine audio generator shifts the pitch of an audio file dynamically based on RPM telemetry:
 
 ```python
 import numpy as np
@@ -147,12 +166,12 @@ sd.wait()
 ## ⚖️ Why Digital Mufflers Exist?
 
 1. **Safety Regulations (NHTSA):** Electric vehicles are incredibly quiet at low speeds, posing risks to pedestrians. Many transport authorities have mandated minimum sound requirements for hybrid and electric vehicles (see [NHTSA Minimum Sound Requirements](https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/812347-minimumsoundrequirements.pdf)).
-2. **Acoustic Experience:** Car enthusiasts miss the raw mechanical feedback of traditional combustion engines. DMuffler brings back that thrill without compromising on EV efficiency.
+2. **Acoustic Experience:** Car enthusiasts miss the raw mechanical feedback of traditional combustion engines. DMuffler brings back that thrill without compromising on EV efficiency. Even Elon Musk has expressed a deep fondness for gas-engine cars (owning vintage classics alongside his Teslas).
 
 ---
 
 ## 📬 Support & Community
 
 * **Developer & Support Email:** dev@evcustoms.store
-* **Author X Account:** @X\_BlazeSanders
+* **Creator Tweet:** @X\_BlazeSanders
 * **Issues:** Submit questions or bug reports via our GitHub Issues page.
