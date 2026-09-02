@@ -46,4 +46,14 @@ final class CarTests: XCTestCase {
 
     }
     
+    // TODO https://share.gemini.google/iUXotyL5zLNx
+    Task {
+        if let user = await UserAsset.create(firstName: "Blaze", phoneNumber: "7196390839", vehicles: [], location: currentLocation) {
+            print("Valid user created.")
+        } else {
+            print("Phone number was invalid.")
+        }
+    }
+
+    
 }

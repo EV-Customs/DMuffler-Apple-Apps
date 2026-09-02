@@ -28,9 +28,27 @@ struct UserAsset: Identifiable{
     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
 
     var firstName: String
-    var phoneNumber: UInt
+    var phoneNumber: String
     var vehicles: [String]
     // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
+    
+    // TODO https://share.gemini.google/iUXotyL5zLNx
+    // Private initializer ensures instances are only created via the validated factory method
+    private init(id: UUID = UUID(), firstName: String, phoneNumber: String, vehicles: [String]) {
+        self.id = id
+        self.firstName = firstName
+        self.phoneNumber = phoneNumber
+        self.vehicles = vehicles
+    }
+
+    static func create(firstName: String, phoneNumber: String, vehicles: [String], location: CLLocation) async -> UserAsset? {
+        guard await isValidPhoneNumber(input: phoneNumber, location: location) else {
+            return nil
+        }
+        
+        return UserAsset(firstName: firstName, phoneNumber: phoneNumber, vehicles: vehicles)
+    }
+    
     
     var description: String {
         """
@@ -44,7 +62,6 @@ struct UserAsset: Identifiable{
 
 }
 
-import CoreLocation
 
 /**
  Validates a phone number based on the user's GPS location by determining the country and delegating to the appropriate validator.
