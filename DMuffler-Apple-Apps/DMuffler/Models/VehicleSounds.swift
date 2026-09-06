@@ -26,3 +26,11 @@ let defaultVehicleAsset = VehicleAsset(
     image: .mclarenArtura,
     sound: Bundle.main.url(forResource: "mclarenF1Sound", withExtension: "wav")!
 )
+
+
+func setVehicleAsset(for model: VehicleModel) -> VehicleAsset {
+    switch model {
+    case .F1:
+        return defaultVehicleAsset
+    }
+}

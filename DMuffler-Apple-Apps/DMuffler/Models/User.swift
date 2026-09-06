@@ -14,6 +14,16 @@ import CoreLocation             // Used to determine which country a User is in
 
 // External libraries
 
+// User Interface CONSTANTS
+UI_TERMINAL_DELAY = 0.1         # Units are seconds
+MAX_UI_DELAY = 2.0              # Units are seconds
+FUNCTION_DELAY = 0.005          # Units are seconds
+MIN_CAN_BUS_TIMESTEP = 0.001    # Units are seconds
+STANDARD_POLLING_RATE = 0.5     # Units are Hertz (0.5 Hz == 33.3 ms)
+COLLECTING_DATA = False         # Software database flag to protect user data
+ERROR_LEVEL_LOG = 1
+WARNING_LEVEL_LOG = 2
+
 
 /**
  Represent a user profile and their associated registered vehicles within a DMuffler app.
@@ -43,6 +53,10 @@ struct UserAsset: Identifiable{
 
     static func create(firstName: String, phoneNumber: String, vehicles: [String], location: CLLocation) async -> UserAsset? {
         guard await isValidPhoneNumber(input: phoneNumber, location: location) else {
+            return nil
+        }
+        
+        guard await User.isValidVIN(input: String) else {
             return nil
         }
         

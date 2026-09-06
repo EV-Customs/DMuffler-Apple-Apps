@@ -1,380 +1,495 @@
-diff --git a/Assets.xcassets/BMW_M4.imageset/BMW_M4.png b/Assets.xcassets/BMW_M4.imageset/BMW_M4.png
-deleted file mode 100644
-index a5984a9..0000000
-Binary files a/Assets.xcassets/BMW_M4.imageset/BMW_M4.png and /dev/null differ
-diff --git a/Assets.xcassets/BMW_M4.imageset/Contents.json b/Assets.xcassets/BMW_M4.imageset/Contents.json
-deleted file mode 100644
-index 6b73b86..0000000
---- a/Assets.xcassets/BMW_M4.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "BMW_M4.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json b/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json
-deleted file mode 100644
-index 85495b9..0000000
---- a/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "FERRARI_LAFERRARI.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png b/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png
-deleted file mode 100644
-index a53dd33..0000000
-Binary files a/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png and /dev/null differ
-diff --git a/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json b/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json
-deleted file mode 100644
-index e1d4d35..0000000
---- a/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "FORD_MODEL_T.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png b/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png
-deleted file mode 100644
-index a794609..0000000
-Binary files a/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png and /dev/null differ
-diff --git a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json b/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json
-deleted file mode 100644
-index b3f593a..0000000
---- a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "FORD_MUSTANG_GT350.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png b/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png
-deleted file mode 100644
-index 251ea29..0000000
-Binary files a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png and /dev/null differ
-diff --git a/Assets.xcassets/PORSCHE_911.imageset/Contents.json b/Assets.xcassets/PORSCHE_911.imageset/Contents.json
-deleted file mode 100644
-index 0e0d6fa..0000000
---- a/Assets.xcassets/PORSCHE_911.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "PORSCHE_911.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png b/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png
-deleted file mode 100644
-index c65d41e..0000000
-Binary files a/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png and /dev/null differ
-diff --git a/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json b/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json
-deleted file mode 100644
-index f42f852..0000000
---- a/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json
-+++ /dev/null
-@@ -1,21 +0,0 @@
--{
--  "images" : [
--    {
--      "filename" : "TESLA_ROADSTER.png",
--      "idiom" : "universal",
--      "scale" : "1x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "2x"
--    },
--    {
--      "idiom" : "universal",
--      "scale" : "3x"
--    }
--  ],
--  "info" : {
--    "author" : "xcode",
--    "version" : 1
--  }
--}
-diff --git a/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png b/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png
-deleted file mode 100644
-index bf47f93..0000000
-Binary files a/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png and /dev/null differ
 diff --git a/DMuffler-Apple-Apps/DMuffler/Models/User.swift b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
-index ab75862..b77e71b 100644
+index b77e71b..977d980 100644
 --- a/DMuffler-Apple-Apps/DMuffler/Models/User.swift
 +++ b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
-@@ -28,10 +28,28 @@ struct UserAsset: Identifiable{
-     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
+@@ -14,6 +14,16 @@ import CoreLocation             // Used to determine which country a User is in
  
-     var firstName: String
--    var phoneNumber: UInt
-+    var phoneNumber: String
-     var vehicles: [String]
-     // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
-     
-+    // TODO https://share.gemini.google/iUXotyL5zLNx
-+    // Private initializer ensures instances are only created via the validated factory method
-+    private init(id: UUID = UUID(), firstName: String, phoneNumber: String, vehicles: [String]) {
-+        self.id = id
-+        self.firstName = firstName
-+        self.phoneNumber = phoneNumber
-+        self.vehicles = vehicles
-+    }
+ // External libraries
+ 
++// User Interface CONSTANTS
++UI_TERMINAL_DELAY = 0.1         # Units are seconds
++MAX_UI_DELAY = 2.0              # Units are seconds
++FUNCTION_DELAY = 0.005          # Units are seconds
++MIN_CAN_BUS_TIMESTEP = 0.001    # Units are seconds
++STANDARD_POLLING_RATE = 0.5     # Units are Hertz (0.5 Hz == 33.3 ms)
++COLLECTING_DATA = False         # Software database flag to protect user data
++ERROR_LEVEL_LOG = 1
++WARNING_LEVEL_LOG = 2
 +
-+    static func create(firstName: String, phoneNumber: String, vehicles: [String], location: CLLocation) async -> UserAsset? {
-+        guard await isValidPhoneNumber(input: phoneNumber, location: location) else {
+ 
+ /**
+  Represent a user profile and their associated registered vehicles within a DMuffler app.
+@@ -46,6 +56,10 @@ struct UserAsset: Identifiable{
+             return nil
+         }
+         
++        guard await User.isValidVIN(input: String) else {
 +            return nil
 +        }
 +        
-+        return UserAsset(firstName: firstName, phoneNumber: phoneNumber, vehicles: vehicles)
-+    }
-+    
-+    
-     var description: String {
-         """
-         👤 Debug User Info:
-@@ -44,7 +62,6 @@ struct UserAsset: Identifiable{
- 
- }
- 
--import CoreLocation
- 
- /**
-  Validates a phone number based on the user's GPS location by determining the country and delegating to the appropriate validator.
-diff --git a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
-index f0e0fca..db295ee 100644
---- a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
-+++ b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
-@@ -46,4 +46,14 @@ final class CarTests: XCTestCase {
- 
+         return UserAsset(firstName: firstName, phoneNumber: phoneNumber, vehicles: vehicles)
      }
      
-+    // TODO https://share.gemini.google/iUXotyL5zLNx
-+    Task {
-+        if let user = await UserAsset.create(firstName: "Blaze", phoneNumber: "7196390839", vehicles: [], location: currentLocation) {
-+            print("Valid user created.")
-+        } else {
-+            print("Phone number was invalid.")
-+        }
-+    }
-+
-+    
+diff --git a/DMuffler-Apple-Apps/DMuffler/Models/Vehicle.swift b/DMuffler-Apple-Apps/DMuffler/Models/Vehicle.swift
+index 010c65f..6298ed2 100644
+--- a/DMuffler-Apple-Apps/DMuffler/Models/Vehicle.swift
++++ b/DMuffler-Apple-Apps/DMuffler/Models/Vehicle.swift
+@@ -84,8 +84,27 @@ enum VehicleModel: Int, CaseIterable {
  }
+ 
+ 
++
++// Physical hardware CONSTANTS
++GO_PEDAL = 0                                                // Pedal furthest right aka "gas pedal"
++GO_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]           #TODO or 29bit?
++
++BRAKE_PEDAL = 1                                             // Pedal furthest left in automatic transmissions vehicles
++BRAKE_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]        #TODO or 29bit?
++
++// Digital simulation of hardware CONSTANTS
++TOP_GEAR = 5
++MAX_RPM = 10000
++
++// CAN Bus CONSTANTS
++VELOCITY_SENSOR_CAN_BUS_IDENTIFIER = [0b111_1111_1111]             #TODO or 29bit?
++ENGINE_LOAD_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                 #TODO or 29bit?
++RPM_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                         #TODO or 29bit?
++ODDOMETER_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                   #TODO or 29bit?
++HYBRID_BATTERY_REMAINING_CAN_BUS_IDENTIFIER = [0b111_1111_1111]    #TODO or 29bit?
++
+ /**
+- Validates whether a given string is a valid 17-character VIN (no production database should ever store an invalid VIN).
++  Validates whether a given string is a valid 17-character VIN (no production database should ever store an invalid VIN).
+ 
+  - Parameter input: The VIN string entered by a user.
+  - Returns: `true` if the VIN is valid; otherwise, `false`.
+@@ -98,10 +117,28 @@ func isValidVIN(input: String) -> Bool {
+ }
+ 
+ 
++/**
++  Checks whether the provided integer maps to a valid `VehicleMake` enum.
++ 
++- Parameter input: The raw integer value to validate against `VehicleMake`.
++- Returns: `true` if `input` matches a `VehicleModel` raw value; otherwise, `false`.
++*/
+ func isValidVehicleMake(input: Int) -> Bool {
+     return VehicleMake(rawValue: input) != nil
+ }
+ 
++
++/**
++  Checks whether the provided integer maps to a valid `VehicleModel` enum.
++ 
++- Parameter input: The raw integer value to validate against `VehicleModel`.
++- Returns: `true` if `input` matches a `VehicleModel` raw value; otherwise, `false`.
++*/
++func isValidVehicleModel(input: Int) -> Bool {
++    return VehicleModel(rawValue: input) != nil
++}
++
++
+ /**
+  Defines a vehicle by its unique identification, make, model, production year, and custom nickname.
+ 
+diff --git a/DMuffler-Apple-Apps/DMuffler/Models/VehicleSounds.swift b/DMuffler-Apple-Apps/DMuffler/Models/VehicleSounds.swift
+index 297e2a6..56b8b75 100644
+--- a/DMuffler-Apple-Apps/DMuffler/Models/VehicleSounds.swift
++++ b/DMuffler-Apple-Apps/DMuffler/Models/VehicleSounds.swift
+@@ -26,3 +26,11 @@ let defaultVehicleAsset = VehicleAsset(
+     image: .mclarenArtura,
+     sound: Bundle.main.url(forResource: "mclarenF1Sound", withExtension: "wav")!
+ )
++
++
++func setVehicleAsset(for model: VehicleModel) -> VehicleAsset {
++    switch model {
++    case .F1:
++        return defaultVehicleAsset
++    }
++}
 diff --git a/diff.txt b/diff.txt
-index e9d2284..5d40d3e 100644
+index 8b73842..be5f708 100644
 --- a/diff.txt
 +++ b/diff.txt
-@@ -1,128 +0,0 @@
--diff --git a/DMuffler-Apple-Apps/DMuffler/ContentView.swift b/DMuffler-Apple-Apps/DMuffler/ContentView.swift
--index 3111b1b..450b9cb 100644
----- a/DMuffler-Apple-Apps/DMuffler/ContentView.swift
--+++ b/DMuffler-Apple-Apps/DMuffler/ContentView.swift
--@@ -23,8 +23,14 @@ struct ContentView: View {
--     var body: some View {
--         //TODO UserDefaults
--         
---        let TestObject = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
---        Text(TestObject.description)
--+        let TestStruct = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
--+        Text(TestStruct.description)
--+            .font(.system(.body, design: .monospaced))
--+            .padding()
--+        
--+        let UserStruct = UserAsset(firstName: "Blaze", phoneNumber: 7196390839, vehicles: ["5YJ3E1EB2JF100019"])
--+        
--+        Text(UserStruct.description)
--             .font(.system(.body, design: .monospaced))
--             .padding()
--     }
+@@ -1,380 +0,0 @@
+-diff --git a/Assets.xcassets/BMW_M4.imageset/BMW_M4.png b/Assets.xcassets/BMW_M4.imageset/BMW_M4.png
+-deleted file mode 100644
+-index a5984a9..0000000
+-Binary files a/Assets.xcassets/BMW_M4.imageset/BMW_M4.png and /dev/null differ
+-diff --git a/Assets.xcassets/BMW_M4.imageset/Contents.json b/Assets.xcassets/BMW_M4.imageset/Contents.json
+-deleted file mode 100644
+-index 6b73b86..0000000
+---- a/Assets.xcassets/BMW_M4.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "BMW_M4.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json b/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json
+-deleted file mode 100644
+-index 85495b9..0000000
+---- a/Assets.xcassets/FERRARI_LAFERRARI.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "FERRARI_LAFERRARI.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png b/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png
+-deleted file mode 100644
+-index a53dd33..0000000
+-Binary files a/Assets.xcassets/FERRARI_LAFERRARI.imageset/FERRARI_LAFERRARI.png and /dev/null differ
+-diff --git a/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json b/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json
+-deleted file mode 100644
+-index e1d4d35..0000000
+---- a/Assets.xcassets/FORD_MODEL_T.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "FORD_MODEL_T.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png b/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png
+-deleted file mode 100644
+-index a794609..0000000
+-Binary files a/Assets.xcassets/FORD_MODEL_T.imageset/FORD_MODEL_T.png and /dev/null differ
+-diff --git a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json b/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json
+-deleted file mode 100644
+-index b3f593a..0000000
+---- a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "FORD_MUSTANG_GT350.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png b/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png
+-deleted file mode 100644
+-index 251ea29..0000000
+-Binary files a/Assets.xcassets/FORD_MUSTANG_GT350.imageset/FORD_MUSTANG_GT350.png and /dev/null differ
+-diff --git a/Assets.xcassets/PORSCHE_911.imageset/Contents.json b/Assets.xcassets/PORSCHE_911.imageset/Contents.json
+-deleted file mode 100644
+-index 0e0d6fa..0000000
+---- a/Assets.xcassets/PORSCHE_911.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "PORSCHE_911.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png b/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png
+-deleted file mode 100644
+-index c65d41e..0000000
+-Binary files a/Assets.xcassets/PORSCHE_911.imageset/PORSCHE_911.png and /dev/null differ
+-diff --git a/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json b/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json
+-deleted file mode 100644
+-index f42f852..0000000
+---- a/Assets.xcassets/TESLA_ROADSTER.imageset/Contents.json
+-+++ /dev/null
+-@@ -1,21 +0,0 @@
+--{
+--  "images" : [
+--    {
+--      "filename" : "TESLA_ROADSTER.png",
+--      "idiom" : "universal",
+--      "scale" : "1x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "2x"
+--    },
+--    {
+--      "idiom" : "universal",
+--      "scale" : "3x"
+--    }
+--  ],
+--  "info" : {
+--    "author" : "xcode",
+--    "version" : 1
+--  }
+--}
+-diff --git a/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png b/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png
+-deleted file mode 100644
+-index bf47f93..0000000
+-Binary files a/Assets.xcassets/TESLA_ROADSTER.imageset/TESLA_ROADSTER.png and /dev/null differ
 -diff --git a/DMuffler-Apple-Apps/DMuffler/Models/User.swift b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
--index 3790da9..a91bae1 100644
+-index ab75862..b77e71b 100644
 ---- a/DMuffler-Apple-Apps/DMuffler/Models/User.swift
 -+++ b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
--@@ -7,8 +7,8 @@
-- // Standard libraries
-- import SwiftData                // Instead of "import Foundation", "SQLite" or "GRDB" (feature-rich SQLite toolkit in Swift)
-- import Foundation
---import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struct
---
--+import DeveloperToolsSupport    // Used to define images in "UserAsset" struct
--+import SwiftUI                  // Used to define SF Symbols in "UserAsset" struct
-- 
-- // External libraries
-- 
--@@ -19,15 +19,27 @@ import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struc
--  - Parameters:
--    - id: The unique identifier for the user profile instance (Satisfies Identifiable protocol)
--    - firstName: The user's given name.
---   - phoneNumber: The numeric contact phone number formatted as an unsigned 32-bit integer. 15551112222
--+   - phoneNumber: The numeric contact cell phone number formatted as an unsigned 32-bit integer. 15551112222
--    - vehicles: A list of VINs associated with a user's account.
--  */
---struct User: Identifiable{
--+struct UserAsset: Identifiable{
+-@@ -28,10 +28,28 @@ struct UserAsset: Identifiable{
 -     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
 - 
 -     var firstName: String
---    var phoneNumber: UInt32
--+    var phoneNumber: UInt
+--    var phoneNumber: UInt
+-+    var phoneNumber: String
 -     var vehicles: [String]
--+    // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
--+    
--+    var description: String {
--+        """
--+        🚗 Debug User Info:
--+          • Name:  \(firstName)
--+          • Cell Phone:  \(phoneNumber)
--+          • Electric & Hybrid Vehicles: \(vehicles)
--+
--+        """
+-     // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
+-     
+-+    // TODO https://share.gemini.google/iUXotyL5zLNx
+-+    // Private initializer ensures instances are only created via the validated factory method
+-+    private init(id: UUID = UUID(), firstName: String, phoneNumber: String, vehicles: [String]) {
+-+        self.id = id
+-+        self.firstName = firstName
+-+        self.phoneNumber = phoneNumber
+-+        self.vehicles = vehicles
 -+    }
 -+
+-+    static func create(firstName: String, phoneNumber: String, vehicles: [String], location: CLLocation) async -> UserAsset? {
+-+        guard await isValidPhoneNumber(input: phoneNumber, location: location) else {
+-+            return nil
+-+        }
+-+        
+-+        return UserAsset(firstName: firstName, phoneNumber: phoneNumber, vehicles: vehicles)
+-+    }
+-+    
+-+    
+-     var description: String {
+-         """
+-         👤 Debug User Info:
+-@@ -44,7 +62,6 @@ struct UserAsset: Identifiable{
+- 
 - }
 - 
+--import CoreLocation
 - 
--@@ -44,4 +56,4 @@ func isValidPhoneNumber(input: String) -> Bool {
+- /**
+-  Validates a phone number based on the user's GPS location by determining the country and delegating to the appropriate validator.
+-diff --git a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+-index f0e0fca..db295ee 100644
+---- a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+-+++ b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+-@@ -46,4 +46,14 @@ final class CarTests: XCTestCase {
 - 
--     // Check length and ensure uppercase matching against valid characters
--     return input.count == 9 && input.uppercased().unicodeScalars.allSatisfy { validPhoneNumberharacters.contains($0) }
---}
--\ No newline at end of file
--+}
+-     }
+-     
+-+    // TODO https://share.gemini.google/iUXotyL5zLNx
+-+    Task {
+-+        if let user = await UserAsset.create(firstName: "Blaze", phoneNumber: "7196390839", vehicles: [], location: currentLocation) {
+-+            print("Valid user created.")
+-+        } else {
+-+            print("Phone number was invalid.")
+-+        }
+-+    }
+-+
+-+    
+- }
 -diff --git a/diff.txt b/diff.txt
--index 884e91f..e69de29 100644
+-index e9d2284..5d40d3e 100644
 ---- a/diff.txt
 -+++ b/diff.txt
--@@ -1,49 +0,0 @@
---diff --git a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
---index e772d3b..59842a2 100644
------ a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
---+++ b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
---@@ -1,19 +1,32 @@
----//
--- //  DMuffler_Apple_AppsTests.swift
----//  DMuffler-Apple-AppsTests
----//
----//  Created by Pluto on 8/23/26.
----//  Copyright © 2026 EV Customs. All rights reserved.
---+// DMuffler-Apple-AppsTests
---+//  For use with the DMuffler product line of EV Customs LLC
--- //
---+//  Created by Blaze Sanders on 2026-08-02
---+//  For support email dev@evcustoms.store
+-@@ -1,128 +0,0 @@
+--diff --git a/DMuffler-Apple-Apps/DMuffler/ContentView.swift b/DMuffler-Apple-Apps/DMuffler/ContentView.swift
+--index 3111b1b..450b9cb 100644
+----- a/DMuffler-Apple-Apps/DMuffler/ContentView.swift
+--+++ b/DMuffler-Apple-Apps/DMuffler/ContentView.swift
+--@@ -23,8 +23,14 @@ struct ContentView: View {
+--     var body: some View {
+--         //TODO UserDefaults
+--         
+---        let TestObject = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
+---        Text(TestObject.description)
+--+        let TestStruct = Vehicle(vin: "12345678901234567", make: VehicleMake.TESLA, model: VehicleModel.MODEL_3, year: 2006, name: "Kit")
+--+        Text(TestStruct.description)
+--+            .font(.system(.body, design: .monospaced))
+--+            .padding()
+--+        
+--+        let UserStruct = UserAsset(firstName: "Blaze", phoneNumber: 7196390839, vehicles: ["5YJ3E1EB2JF100019"])
+--+        
+--+        Text(UserStruct.description)
+--             .font(.system(.body, design: .monospaced))
+--             .padding()
+--     }
+--diff --git a/DMuffler-Apple-Apps/DMuffler/Models/User.swift b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
+--index 3790da9..a91bae1 100644
+----- a/DMuffler-Apple-Apps/DMuffler/Models/User.swift
+--+++ b/DMuffler-Apple-Apps/DMuffler/Models/User.swift
+--@@ -7,8 +7,8 @@
+-- // Standard libraries
+-- import SwiftData                // Instead of "import Foundation", "SQLite" or "GRDB" (feature-rich SQLite toolkit in Swift)
+-- import Foundation
+---import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struct
+---
+--+import DeveloperToolsSupport    // Used to define images in "UserAsset" struct
+--+import SwiftUI                  // Used to define SF Symbols in "UserAsset" struct
 -- 
----import Testing
---+import XCTest
---+@testable import DMuffler_Apple_Apps // Use your app target name
+-- // External libraries
 -- 
----struct DMuffler_Apple_AppsTests {
---+final class CarTests: XCTestCase {
+--@@ -19,15 +19,27 @@ import DeveloperToolsSupport    // Used to define images in "VehicleAsset" struc
+--  - Parameters:
+--    - id: The unique identifier for the user profile instance (Satisfies Identifiable protocol)
+--    - firstName: The user's given name.
+---   - phoneNumber: The numeric contact phone number formatted as an unsigned 32-bit integer. 15551112222
+--+   - phoneNumber: The numeric contact cell phone number formatted as an unsigned 32-bit integer. 15551112222
+--    - vehicles: A list of VINs associated with a user's account.
+--  */
+---struct User: Identifiable{
+--+struct UserAsset: Identifiable{
+--     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
 -- 
----    @Test func example() async throws {
----        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
----        // Swift Testing Documentation
----        // https://developer.apple.com/documentation/testing
----    }
---+    func testVehicleValidation() {
---+        // VIN Assertions
---+        XCTAssertTrue(isValidVIN(input:  "HGBH42JXMN123456"))
---+        XCTAssertFalse(isValidVIN(input: "OHGBH42JXMN123456"))
---+        XCTAssertFalse(isValidVIN(input: "IHGBH42JXMN123456"))
---+        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456"))
---+        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456  "))
---+        XCTAssertFalse(isValidVIN(input: " QHGBH42JXMN123456"))
---+        XCTAssertFalse(isValidVIN(input: "H42JXMN123456"))
--- 
---+        // CarMake Assertions
---+        XCTAssertTrue(isValidVehicleMake(input: 3))
---+        XCTAssertFalse(isValidVehicleMake(input: 15))
+--     var firstName: String
+---    var phoneNumber: UInt32
+--+    var phoneNumber: UInt
+--     var vehicles: [String]
+--+    // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
+--+    
+--+    var description: String {
+--+        """
+--+        🚗 Debug User Info:
+--+          • Name:  \(firstName)
+--+          • Cell Phone:  \(phoneNumber)
+--+          • Electric & Hybrid Vehicles: \(vehicles)
 --+
---+        // Enum Inspection
---+        if let lastRankedCarMake = VehicleMake.allCases.last {
---+            print("Worst ranked car make: \(lastRankedCarMake)")
---+        }
+--+        """
 --+    }
+--+
 -- }
+-- 
+-- 
+--@@ -44,4 +56,4 @@ func isValidPhoneNumber(input: String) -> Bool {
+-- 
+--     // Check length and ensure uppercase matching against valid characters
+--     return input.count == 9 && input.uppercased().unicodeScalars.allSatisfy { validPhoneNumberharacters.contains($0) }
+---}
+--\ No newline at end of file
+--+}
+--diff --git a/diff.txt b/diff.txt
+--index 884e91f..e69de29 100644
+----- a/diff.txt
+--+++ b/diff.txt
+--@@ -1,49 +0,0 @@
+---diff --git a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+---index e772d3b..59842a2 100644
+------ a/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+---+++ b/DMuffler-Apple-AppsTests/DMuffler_Apple_AppsTests.swift
+---@@ -1,19 +1,32 @@
+----//
+--- //  DMuffler_Apple_AppsTests.swift
+----//  DMuffler-Apple-AppsTests
+----//
+----//  Created by Pluto on 8/23/26.
+----//  Copyright © 2026 EV Customs. All rights reserved.
+---+// DMuffler-Apple-AppsTests
+---+//  For use with the DMuffler product line of EV Customs LLC
+--- //
+---+//  Created by Blaze Sanders on 2026-08-02
+---+//  For support email dev@evcustoms.store
+--- 
+----import Testing
+---+import XCTest
+---+@testable import DMuffler_Apple_Apps // Use your app target name
+--- 
+----struct DMuffler_Apple_AppsTests {
+---+final class CarTests: XCTestCase {
+--- 
+----    @Test func example() async throws {
+----        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+----        // Swift Testing Documentation
+----        // https://developer.apple.com/documentation/testing
+----    }
+---+    func testVehicleValidation() {
+---+        // VIN Assertions
+---+        XCTAssertTrue(isValidVIN(input:  "HGBH42JXMN123456"))
+---+        XCTAssertFalse(isValidVIN(input: "OHGBH42JXMN123456"))
+---+        XCTAssertFalse(isValidVIN(input: "IHGBH42JXMN123456"))
+---+        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456"))
+---+        XCTAssertFalse(isValidVIN(input: "QHGBH42JXMN123456  "))
+---+        XCTAssertFalse(isValidVIN(input: " QHGBH42JXMN123456"))
+---+        XCTAssertFalse(isValidVIN(input: "H42JXMN123456"))
+--- 
+---+        // CarMake Assertions
+---+        XCTAssertTrue(isValidVehicleMake(input: 3))
+---+        XCTAssertFalse(isValidVehicleMake(input: 15))
+---+
+---+        // Enum Inspection
+---+        if let lastRankedCarMake = VehicleMake.allCases.last {
+---+            print("Worst ranked car make: \(lastRankedCarMake)")
+---+        }
+---+    }
+--- }

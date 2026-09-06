@@ -84,8 +84,27 @@ enum VehicleModel: Int, CaseIterable {
 }
 
 
+
+// Physical hardware CONSTANTS
+GO_PEDAL = 0                                                // Pedal furthest right aka "gas pedal"
+GO_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]           #TODO or 29bit?
+
+BRAKE_PEDAL = 1                                             // Pedal furthest left in automatic transmissions vehicles
+BRAKE_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]        #TODO or 29bit?
+
+// Digital simulation of hardware CONSTANTS
+TOP_GEAR = 5
+MAX_RPM = 10000
+
+// CAN Bus CONSTANTS
+VELOCITY_SENSOR_CAN_BUS_IDENTIFIER = [0b111_1111_1111]             #TODO or 29bit?
+ENGINE_LOAD_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                 #TODO or 29bit?
+RPM_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                         #TODO or 29bit?
+ODDOMETER_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                   #TODO or 29bit?
+HYBRID_BATTERY_REMAINING_CAN_BUS_IDENTIFIER = [0b111_1111_1111]    #TODO or 29bit?
+
 /**
- Validates whether a given string is a valid 17-character VIN (no production database should ever store an invalid VIN).
+  Validates whether a given string is a valid 17-character VIN (no production database should ever store an invalid VIN).
 
  - Parameter input: The VIN string entered by a user.
  - Returns: `true` if the VIN is valid; otherwise, `false`.
@@ -98,9 +117,27 @@ func isValidVIN(input: String) -> Bool {
 }
 
 
+/**
+  Checks whether the provided integer maps to a valid `VehicleMake` enum.
+ 
+- Parameter input: The raw integer value to validate against `VehicleMake`.
+- Returns: `true` if `input` matches a `VehicleModel` raw value; otherwise, `false`.
+*/
 func isValidVehicleMake(input: Int) -> Bool {
     return VehicleMake(rawValue: input) != nil
 }
+
+
+/**
+  Checks whether the provided integer maps to a valid `VehicleModel` enum.
+ 
+- Parameter input: The raw integer value to validate against `VehicleModel`.
+- Returns: `true` if `input` matches a `VehicleModel` raw value; otherwise, `false`.
+*/
+func isValidVehicleModel(input: Int) -> Bool {
+    return VehicleModel(rawValue: input) != nil
+}
+
 
 /**
  Defines a vehicle by its unique identification, make, model, production year, and custom nickname.
