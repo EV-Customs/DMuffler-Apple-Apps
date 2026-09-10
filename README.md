@@ -1,11 +1,11 @@
-# Digital Muffler (DMuffler)
+# DMuffler (Digital Muffler) Apple Apps
 
 ![Platform](https://img.shields.io/badge/Platforms-iOS%20%7C%20iPadOS%20%7C%20watchOS%20%7C%20macOS-blue?style=flat-square)
 ![Swift](https://img.shields.io/badge/Swift-5.0+-orange.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
 
-**DMuffler** (Digital Muffler / pun of launchd) is a cross-platform Apple application designed to bring dynamic, customizable engine and exhaust audio profiles to the modern electric vehicle (EV) enthusiast. 
-Built entirely in Swift, DMuffler runs natively on all four major Apple platforms, allowing you to control and customize your EV's acoustic footprint right from your wrist, tablet, phone, or personal computer (just not on PC or Android yet).
+**DMuffler** (pun of launchd) is an ecosystem of apps (Swift & Python) designed to bring dynamic, customizable engine and exhaust audio profiles to the modern electric vehicles (EV) and hybrid vehicles. See (https://evcustoms.org)[https://evcustoms.org/] for more details. 
+Built entirely in Swift, the DMuffler Apple Apps runs natively on all four major Apple platforms, allowing you to control and customize your EV's acoustic footprint right from your wrist, tablet, phone, or personal computer (just not on PC or Android yet, coming March 2028.
 
 > Here’s to the sound creators. The tone tweakers. The noise makers.*
 *The ones who hear things differently. **Sound Different!**
@@ -14,29 +14,33 @@ Built entirely in Swift, DMuffler runs natively on all four major Apple platform
 
 ## 🏎 How It Works
 
-The **DMuffler** ecosystem bridges a native Apple frontend app with a custom Raspberry Pi-based backend module:
+The **DMuffler** ecosystem bridges native Apple frontend apps with a custom Raspberry Pi-based backend:
 
 1. **Frontend App (Swift UI):** Runs on your iOS, iPadOS, watchOS, or macOS device. It acts as the command center for selecting sound profiles, viewing telemetry, and customizing vehicle audio settings.
-2. **Compute Module (Python Backend):** A Raspberry Pi CM4 housed in your vehicle intercepts real-time CAN bus / OBD-2 telemetry (speed, throttle position, RPM)  to generate dynamically pitch-shifted exhaust audio, which is Bluetooth streamed in high quality to your vehicle internal speakers using the (aptX)[https://en.wikipedia.org/wiki/AptX] audio data compression codecs.
-3. **Muffler Hardware:** A custom physical 3D-printed enclosure with magnets attaches to your vehicle and projects  synthesized acoustics externally, if desired. You can turn this off at any time to keep the neighbors happy. 
+2. **Compute Module Dongle (Python Backend):** A Raspberry Pi CM4 housed in your vehicle intercepts real-time CAN bus / OBD-2 telemetry (speed, throttle position, RPM)  to generate dynamically pitch-shifted exhaust audio, which is Bluetooth streamed in high quality to your vehicle internal speakers using the (aptX)[https://en.wikipedia.org/wiki/AptX] audio data compression codecs.
+3. **Muffler Hardware (coming March 2028):** A custom physical 3D-printed enclosure with magnets attaches to your vehicle and projects  synthesized acoustics externally, if desired. You can turn this off at any time to keep the neighbors happy. 
 
 ---
 
 ## 🛠 Hardware Requirements
 
 To experience the full integration of the DMuffler ecosystem, the following development and deployment hardware is required.
-### Development:
+### For Desktop Development:
 To hack (correctly defined as "A transparent, community-shared modification or repurposing of hardware or software to solve a problem in a way the original creator did not intend.") the DMuffler ecosystem you will need:
+| Component | Description | Source / Part Number |
+| :--- | :--- | :--- |
+| **Compute Module** | Raspberry Pi Compute Module 4 | [Pi Foundation P/N CM4](https://www.raspberrypi.com/products/compute-module-4) |
+| **Carrier Board** | Dual Gigabit Carrier Board for CM4 | [SeeedStudio SKU 102110497](https://wiki.seeedstudio.com/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#fpc-interface) |
+| Apple Device | iPhone 11 (or newer) or MacOS 27+ (Golden Gate) | [](https://wiki.seeedstudio.com/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#fpc-interface) ???? |
 
-### Deployment:
+### For In-Car Deployment:
 To use the DMuffler ecosystem inside your vehicle you will need:
-
 | Component | Description | Source / Part Number |
 | :--- | :--- | :--- |
 | **Hardware Dongle** | CANOPi CAN Bus Interface | [TesCustoms P/N 100-0001-A](https://github.com/TesCustoms/TesMufflerDongle) |
 | **Compute Module** | Raspberry Pi Compute Module 4 | [Pi Foundation P/N CM4](https://www.raspberrypi.com/products/compute-module-4) |
-| **Carrier Board** | Dual Gigabit Carrier Board for CM4 | [SeeedStudio SKU 102110497](https://wiki.seeedstudio.com/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#fpc-interface) |
 | **Adapter Harness** | OHP OBD2 Adapter Harness | [Manufacturer P/N 10246](https://www.amazon.com/dp/B08DXY5KVX) |
+| Apple Device| iPhone 11 (or newer) / Apple Watch Series 9 (or newer) Ultra 2 (or newer) or SE3 (or newer) / iPad Air (3rd Gen or newer) or iPad (8th Gen or newer) or iPad Mini (5th Gen or newer) or iPad Pro 1st Gen or newer) / MacOS 27+ (Golden Gate) | [](https://wiki.seeedstudio.com/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#fpc-interface) ???? |
 | **Physical Muffler** | Custom 3D printed muffler with magnets | [TesMufflerCADv1.stl](https://github.com/OpenSourceIronman/Tes/blob/master/TesMuffler/TesMufflerCADv1.stl) |
 
 ---
