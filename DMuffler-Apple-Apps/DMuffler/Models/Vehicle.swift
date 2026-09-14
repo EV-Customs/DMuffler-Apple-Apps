@@ -84,24 +84,16 @@ enum VehicleModel: Int, CaseIterable {
 }
 
 
+// Physical hardware CONSTANTS across all makes and models
+// Not Auto-incremented enums
+enum VehicleHardwareConstants: Int {
+    case GO_PEDAL = 0                   // Pedal furthest right (also called the "gas pedal" or "accelerator pedal")
+    case BRAKE_PEDAL = 1                // Pedal furthest left in automatic transmissions vehicles, and middle pedal in maual vehicles
+    case TOP_GEAR = 5                   // Max number of gear digital simulation can shift through
+    case NOMINAL_GEAR_SHIFT_RPM = 3500  // Max motor revolutions per mintue that digital simulation will allow
+    case MAX_RPM = 10000                // Max motor revolutions per mintue that digital simulation will allow
+}
 
-// Physical hardware CONSTANTS
-GO_PEDAL = 0                                                // Pedal furthest right aka "gas pedal"
-GO_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]           #TODO or 29bit?
-
-BRAKE_PEDAL = 1                                             // Pedal furthest left in automatic transmissions vehicles
-BRAKE_PEDAL_POSITION_CAN_BUS_IDENTIFIER = [0b11_111_111_111]        #TODO or 29bit?
-
-// Digital simulation of hardware CONSTANTS
-TOP_GEAR = 5
-MAX_RPM = 10000
-
-// CAN Bus CONSTANTS
-VELOCITY_SENSOR_CAN_BUS_IDENTIFIER = [0b111_1111_1111]             #TODO or 29bit?
-ENGINE_LOAD_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                 #TODO or 29bit?
-RPM_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                         #TODO or 29bit?
-ODDOMETER_CAN_BUS_IDENTIFIER = [0b111_1111_1111]                   #TODO or 29bit?
-HYBRID_BATTERY_REMAINING_CAN_BUS_IDENTIFIER = [0b111_1111_1111]    #TODO or 29bit?
 
 /**
   Validates whether a given string is a valid 17-character VIN (no production database should ever store an invalid VIN).
@@ -159,6 +151,17 @@ struct Vehicle: Identifiable{
     var year: Int
     var name: String
     
+    
+    // CAN Bus variables set for each vehicle make and/or model
+    // TODO [0b11_111_111_111 or 0b11_111_111_111_111_111_111_111_111_111]        #11 or 29bit?
+    var GO_PEDAL_POSITION_CAN_BUS_IDENTIFIER: UInt16
+    var BRAKE_PEDAL_POSITION_CAN_BUS_IDENTIFIER: UInt32
+    var VELOCITY_SENSOR_CAN_BUS_IDENTIFIER: UInt32
+    var ENGINE_LOAD_CAN_BUS_IDENTIFIER: UInt32
+    var RPM_CAN_BUS_IDENTIFIER: UInt32
+    var ODDOMETER_CAN_BUS_IDENTIFIER: UInt32
+    var HYBRID_BATTERY_REMAINING_CAN_BUS_IDENTIFIER: UInt32
+    
     var id = UUID()  // TODO Remove this later after SwiftData library creates them
     
     var description: String {
@@ -169,6 +172,8 @@ struct Vehicle: Identifiable{
           • Model: \(model)
           • Year:  \(year)
           • VIN:   \(vin)
+          • NOMINAL_GEAR_SHIFT_RPM \(VehicleHardwareConstants.NOMINAL_GEAR_SHIFT_RPM)
+          • MAX_RPM \(VehicleHardwareConstants.MAX_RPM)
         """
     }
 }

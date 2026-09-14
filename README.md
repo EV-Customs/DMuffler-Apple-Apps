@@ -19,6 +19,7 @@ The **DMuffler** ecosystem bridges native Apple frontend apps with a custom Rasp
 1. **Frontend App (Swift UI):** Runs on your iOS, iPadOS, watchOS, or macOS device. It acts as the command center for selecting sound profiles, viewing telemetry, and customizing vehicle audio settings.
 2. **Compute Module Dongle (Python Backend):** A Raspberry Pi CM4 housed in your vehicle intercepts real-time CAN bus / OBD-2 telemetry (speed, throttle position, RPM)  to generate dynamically pitch-shifted exhaust audio, which is Bluetooth streamed in high quality to your vehicle internal speakers using the (aptX)[https://en.wikipedia.org/wiki/AptX] audio data compression codecs.
 3. **Muffler Hardware (coming March 2028):** A custom physical 3D-printed enclosure with magnets attaches to your vehicle and projects  synthesized acoustics externally, if desired. You can turn this off at any time to keep the neighbors happy. 
+4. **iPhone Duo and Apple Vision Pro:** Support coming at customer 1 million (current customer count = 3)
 
 ---
 
