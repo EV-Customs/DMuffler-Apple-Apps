@@ -32,19 +32,19 @@ WARNING_LEVEL_LOG = 2
    - id: The unique identifier for the user profile instance (Satisfies Identifiable protocol)
    - firstName: The user's given name.
    - phoneNumber: The numeric contact cell phone number formatted as an unsigned 32-bit integer. 15551112222
-   - vehicles: A list of VINs associated with a user's account.
+   - vehicles: A list of VINs and color of car associated with a user's account.
  */
 struct UserAsset: Identifiable{
     var id: UUID =  UUID() // TODO Remove this later after SwiftData library creates them
 
     var firstName: String
     var phoneNumber: String
-    var vehicles: [String]
+    var vehicles: [String, Int]
     // TODO var profilePicture = Image(systemName: "person.crop.circle.fill").symbolRenderingMode(.palette).foregroundStyle(Color.gray, Color.gray.opacity(0.25)).font(.system(size: 64))  • Profile Picture:  \(profilePicture)
     
     // TODO https://share.gemini.google/iUXotyL5zLNx
     // Private initializer ensures instances are only created via the validated factory method
-    private init(id: UUID = UUID(), firstName: String, phoneNumber: String, vehicles: [String]) {
+    private init(id: UUID = UUID(), firstName: String, phoneNumber: String, vehicles: [String, Int]) {
         self.id = id
         self.firstName = firstName
         self.phoneNumber = phoneNumber
