@@ -74,7 +74,7 @@ DMuffler is pre-configured to simulate seven exhaust signatures for a wide varie
 To add additonal custom exhaust signatures you will need to purchase and download them from the EV Customs Sound Store, wherea community of artists from around Earth have created refined sounds for your enjoyment.
 Three easy steps:
 1. Visit www.evcustoms.store on your iPhone, iPad, or Mac to purchase and download to your Apple device. 
-2. 
+2. https://insertaffiliate.com/
 
 
 ---
